@@ -1,13 +1,13 @@
 ---
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 const pageTitle = "Home";
 ---
 
-<a href="/">{pageTitle}</a>
-<a href="/about/">About</a>
-<a href="/blog/">Blog</a>
+<Header />
 
 <div id="container">
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
@@ -46,6 +46,8 @@ const pageTitle = "Home";
 		</p>
 	</a>
 </div>
+
+<Footer />
 
 <style>
 	#background {
